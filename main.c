@@ -30,6 +30,13 @@ int main(){
 
     imprime_histograma(vetor,qtd);
 
+    for (i = 0; i < qtd; i++)
+    {
+        free(vetor[i]);
+    }
+
+    free(vetor);
+
     return 0;
 }
 
